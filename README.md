@@ -13,7 +13,7 @@ I use it to get the following:
 
 ## Help menu
 When you execute whereis() without parameters you will whereiset the followinwhereis:
-![Help menu](https://whereisithub.com/al-jimenez/whereis/blob/master/whereis.pnwhereis?raw=true)
+![Help menu](https://github.com/al-jimenez/whereis/blob/master/whereis.png)
 
 ## Usage Examples:
    whereis which      - returns '/usr/bin/which'
