@@ -1,7 +1,9 @@
 # whereis()
 whereis is a bash function that overloads the native whereis. It locates programs (using native 'whereis')
-or locates a file (i.e. script, etc). NOTE: uses 'find' which excludes ~\Library, searches current folder structure. Obviously
-this is for use on macOS and can be modified for other OS.
+or locates a file (i.e. script, etc). NOTE: uses 'find' which excludes ~\Library, searches current folder structure.
+
+# OS
+Used / created for macOS bash but can be modified for other OS.
 
 ## Use
 Use this and customize it with your variations.  I use it to search for commands, whether it be a command, a script or any other file.
@@ -12,7 +14,7 @@ I use it to get the following:
   3) get the location of a speific file  ('find')
 
 ## Help menu
-When you execute whereis() without parameters you will whereiset the followinwhereis:
+When you execute whereis() without parameters you will get the following:
 ![Help menu](https://github.com/al-jimenez/whereis/blob/master/whereis.png)
 
 ## Usage Examples:
