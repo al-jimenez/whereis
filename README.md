@@ -2,7 +2,7 @@
 whereis is a bash function that overloads whereis. It locates programs (using native 'whereis')
 or locates a file (i.e. script, etc). NOTE: uses 'find' which excludes ~\Library, searches current folder structure.
 
-# OS
+## OS
 Used / created for macOS bash but can be modified for other OS.
 
 ## Use
