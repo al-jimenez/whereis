@@ -22,6 +22,6 @@ When you execute whereis() without parameters you will get the following:
 
    whereis whereis    - returns '/usr/bin/whereis'
 
-   whereis dotfile.sh - returns locations of dotfiles.sh (w/find)
+   whereis dotfiles.sh - returns locations of dotfiles.sh (w/find)
 
    whereis chknet.sh  - returns locations of chknet.sh (w/find)
