@@ -1,5 +1,5 @@
 # whereis()
-whereis is a Bash function - whereis is overloading of native whereis. It locates programs (using native 'whereis')
+whereis is a bash function that overloads the native whereis. It locates programs (using native 'whereis')
 or locates a file (i.e. script, etc). NOTE: uses 'find' which excludes ~\Library, searches current folder structure. Obviously
 this is for use on macOS and can be modified for other OS.
 
