@@ -6,8 +6,6 @@ alias .whereis='/usr/bin/whereis'     # maintain command line access to default 
 #    Usage:  whereis <progrem>, whereis <filename>
 whereis() {
   [[ -z ${1}            ]] && { shift; ${FUNCNAME[0]} -?; return; }             # if 1st param is empty
-  #[[ "${1}" == "simple" ]] || [[ "${1}" == "-"  ]] && { shift; *; return; }
-  #[[ "${1}" == "pause"  ]] || [[ "${1}" == "p"  ]] && { shift; *; pause; return; }
   [[ "${1}" == "?"      ]] || [[ "${1}" == "-?" ]] || [[ "${1}" == "help" ]] || [[ "${1}" == "-h" ]] && {   # ${FUNCNAME[0]} -?
     echo -e "
     PURPOSE: whereis is a bash function that overloads whereis. It locates programs
