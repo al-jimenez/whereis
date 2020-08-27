@@ -10,7 +10,10 @@ whereis() {
     echo -e "
     PURPOSE: whereis is a bash function that overloads whereis. It locates programs
     (using native 'whereis') or locates a file (i.e. script, etc).
-    (NOTE: uses 'find' which excludes ~\Library, searches current folder structure)
+
+    NOTE: uses 'find' which excludes ~\Library, searches current folder structure.
+    Also Bash does not have a way to find the source of a function.  Therefore a
+    fucntion is just displayed with 'less' when found.
 
     ${FUNCNAME[0]} <options> | <program name> | <file name>
 
@@ -25,8 +28,7 @@ whereis() {
     "
     return;
     }
-    [[ "$(/usr/bin/whereis ${1})" != "" ]] && { /usr/bin/whereis ${1}; return; }
-    [[ "$(/usr/bin/whereis ${1})" == "" ]] && { which ${1}; }
+    which ${1};
     find ~ -path ~/Library -prune -false -o -name ${1};
     return;
  }
