@@ -25,11 +25,9 @@ whereis() {
     "
     return;
     }
-    [[ "${1}" != "" ]] && {
-       /usr/bin/which ${@};
-       [[ $? != 0 ]] && { find ~ -path ~/Library -prune -false -o -name ${1}; return; }
-       [[ $? == 0 ]] && { /usr/bin/whereis ${@}; return; }
-       return;
-    }                                  # if 1st param is not empty and unique (not above)
+    [[ "$(/usr/bin/whereis ${1})" != "" ]] && { /usr/bin/whereis ${1}; return; }
+    [[ "$(/usr/bin/whereis ${1})" == "" ]] && { which ${1}; }
+    find ~ -path ~/Library -prune -false -o -name ${1};
+    return;
  }
  export -f whereis;
